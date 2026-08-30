@@ -1,8 +1,8 @@
 {
-  "bundle_name": "Codex 6 Video Skills Bundle",
-  "bundle_version": "1.0.0",
+  "bundle_name": "Henghua Codex Skill Library",
+  "bundle_version": "1.1.0",
   "verified_date": "2026-08-30",
-  "purpose": "Six-video-skill integration/bootstrap bundle for Codex and compatible Agent Skills runtimes.",
+  "purpose": "Codex / Agent Skills integration library containing six video skills plus Henghua BookBinding Expert.",
   "skills": [
     {
       "id": "hyperframes",
@@ -48,6 +48,16 @@
       "branch": "main",
       "install_hint": "npx skills add dexhunter/seedance2-skill",
       "requirements": ["Node.js for skills CLI"]
+    },
+    {
+      "id": "henghua-bookbinding",
+      "name": "HenghuaBookBindingExpert",
+      "version": "3.19.0",
+      "factory_level": "L24",
+      "path": "skills/bookbinding/SKILL.md",
+      "validation_center": "1.15.0",
+      "capabilities": ["105 binding methods", "961 sourced technical parameters", "134 sources", "production gate", "numeric evidence closure"],
+      "requirements": ["Python 3", "Windows PowerShell for one-click local install/validation"]
     }
   ]
 }
