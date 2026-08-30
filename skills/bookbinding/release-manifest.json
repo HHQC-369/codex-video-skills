@@ -1,0 +1,41 @@
+{
+  "name": "Henghua BookBinding GitHub Integration",
+  "release": "v3.19.0",
+  "factory_level": "L24",
+  "validation_center": "v1.15.0",
+  "verified_at": "2026-08-30",
+  "expert_validation": {
+    "result": "PASS",
+    "passed": 41,
+    "total": 41
+  },
+  "packages": [
+    {
+      "name": "Henghua_BookBinding_SkillFactory_L24_v3.19.0_RemainingNumericEvidenceClosure.zip",
+      "sha256": "40558bf425df1d179d39592705354633ef781d29b5758b746313b3780595f1bf",
+      "size_bytes": 3669898,
+      "file_count": 997,
+      "role": "full-source-factory"
+    },
+    {
+      "name": "HenghuaBookBindingExpert_v3.19.0.zip",
+      "sha256": "9481e76a7c53d7165eee19007afd628d58b68ca6c788ac29fe344577d6651b00",
+      "size_bytes": 1181195,
+      "file_count": 486,
+      "role": "installable-expert"
+    },
+    {
+      "name": "Henghua_BookBinding_ValidationCenter_v1.15.0.zip",
+      "sha256": "e3019ab560ad9637327203b709a13f9e2bd3128997af9d8c7a758e7560ca28c1",
+      "size_bytes": 4319,
+      "file_count": 3,
+      "role": "independent-validator"
+    }
+  ],
+  "github_layout": {
+    "router": "skills/bookbinding/SKILL.md",
+    "factory_entry": "skills/bookbinding/factory/v3.19.0/",
+    "validator": "skills/bookbinding/validation/v1.15.0/",
+    "installer": "skills/bookbinding/tools/install-henghua-bookbinding.ps1"
+  }
+}
