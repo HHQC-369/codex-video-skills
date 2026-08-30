@@ -1,0 +1,53 @@
+{
+  "bundle_name": "Codex 6 Video Skills Bundle",
+  "bundle_version": "1.0.0",
+  "verified_date": "2026-08-30",
+  "purpose": "Six-video-skill integration/bootstrap bundle for Codex and compatible Agent Skills runtimes.",
+  "skills": [
+    {
+      "id": "hyperframes",
+      "name": "HyperFrames",
+      "upstream": "https://github.com/heygen-com/hyperframes",
+      "branch": "main",
+      "install_hint": "npx skills add heygen-com/hyperframes",
+      "requirements": ["Node.js 22+", "FFmpeg"]
+    },
+    {
+      "id": "video-use",
+      "name": "video-use",
+      "upstream": "https://github.com/browser-use/video-use",
+      "branch": "main",
+      "requirements": ["Python", "ffmpeg/ffprobe", "ElevenLabs API key", "Node.js for some animation engines"]
+    },
+    {
+      "id": "remotion",
+      "name": "Remotion Agent Skills",
+      "upstream": "https://github.com/remotion-dev/skills",
+      "branch": "main",
+      "install_hint": "npx skills add remotion-dev/skills",
+      "requirements": ["Node.js"]
+    },
+    {
+      "id": "generative-media",
+      "name": "Generative Media Skills",
+      "upstream": "https://github.com/SamurAIGPT/Generative-Media-Skills",
+      "branch": "main",
+      "requirements": ["Node.js", "muapi-cli", "MUAPI_API_KEY for MuAPI-backed generation"]
+    },
+    {
+      "id": "chengfeng-videocut",
+      "name": "chengfeng-videocut-skills",
+      "upstream": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
+      "branch": "main",
+      "requirements": ["Windows 10/11 or macOS", "Node.js 20+", "Chrome", "Runtime dependencies per upstream"]
+    },
+    {
+      "id": "seedance2",
+      "name": "Seedance 2.0 Prompt Writing Skill",
+      "upstream": "https://github.com/dexhunter/seedance2-skill",
+      "branch": "main",
+      "install_hint": "npx skills add dexhunter/seedance2-skill",
+      "requirements": ["Node.js for skills CLI"]
+    }
+  ]
+}
