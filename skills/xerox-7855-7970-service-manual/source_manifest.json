@@ -1,0 +1,73 @@
+{
+  "skill_name": "施乐7855，7970维修手册",
+  "github_install": {
+    "version": "1.0.0",
+    "path": "skills/xerox-7855-7970-service-manual/SKILL.md",
+    "installed_date": "2026-09-14"
+  },
+  "sources": [
+    {
+      "name": "7855 7970等维修手册...pdf",
+      "type": "pdf",
+      "actual_title": "WorkCentre 7556 Family Service Documentation",
+      "pages": 1424,
+      "evidence": "A for 7525/30/35/45/56"
+    },
+    {
+      "name": "7855芯片破解过程.doc",
+      "type": "doc",
+      "evidence": "C field note"
+    },
+    {
+      "name": "输稿台边距调整.doc",
+      "type": "doc",
+      "evidence": "C field note"
+    },
+    {
+      "name": "系统错误.doc",
+      "type": "doc",
+      "evidence": "C field note"
+    },
+    {
+      "name": "四代机五代机 清洁玻璃稿台.mp4",
+      "duration_sec": 181.3,
+      "evidence": "B video"
+    },
+    {
+      "name": "四代机五代机在驱动调整颜色.mp4",
+      "duration_sec": 66.73,
+      "evidence": "B video"
+    },
+    {
+      "name": "四代五代机取出定影器视频 转动齿轮.mp4",
+      "duration_sec": 47.53,
+      "evidence": "B video"
+    },
+    {
+      "name": "网络扫描.mp4",
+      "duration_sec": 127.74,
+      "evidence": "B video; WorkCentre 7855 visible"
+    },
+    {
+      "name": "网络扫描设置1.mp4",
+      "duration_sec": 108.08,
+      "evidence": "B video"
+    },
+    {
+      "name": "五代机定影器拆卸.mp4",
+      "duration_sec": 685.8,
+      "evidence": "B video"
+    },
+    {
+      "name": "转印带刮板清洁.mp4",
+      "duration_sec": 49.27,
+      "evidence": "B video"
+    },
+    {
+      "name": "最新7835 7855打印选纸视频，证卡复印视频.mp4",
+      "duration_sec": 280.06,
+      "evidence": "B video"
+    }
+  ],
+  "note": "GitHub installed edition is self-contained for callable text knowledge. Binary keyframes and the larger local index remain in the original Skill ZIP."
+}

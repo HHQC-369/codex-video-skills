@@ -1,9 +1,9 @@
 # 恒华 Codex Skill Library
 
-版本：1.1.0  
-核对日期：2026-08-30
+版本：1.2.0  
+核对日期：2026-09-14
 
-本仓库统一管理原有 6 个视频相关 Skill / Skill 项目，并新增恒华书籍装订专家 Skill。
+本仓库统一管理原有 6 个视频相关 Skill / Skill 项目、恒华书籍装订专家 Skill，并新增施乐 7855/7970 维修手册 Skill。
 
 ## 当前 Skill
 
@@ -14,11 +14,13 @@
 5. chengfeng-videocut-skills
 6. Seedance 2.0 Prompt Writing Skill
 7. HenghuaBookBindingExpert v3.19.0
+8. 施乐7855，7970维修手册
 
 ## 仓库结构
 
 - `skills/`：统一入口 Skill，方便 Codex / Agent 理解每个能力的用途、安装方式和调用边界。
 - `skills/bookbinding/SKILL.md`：恒华装订专家 GitHub 统一入口。
+- `skills/xerox-7855-7970-service-manual/SKILL.md`：施乐 7855/7970 维修手册统一入口。
 - `skills/bookbinding/factory/v3.19.0/`：BookBinding Skill Factory L24 v3.19.0 版本入口与发布说明。
 - `skills/bookbinding/validation/v1.15.0/`：BookBinding 独立验证中心，可直接验证目录或 ZIP。
 - `skills/bookbinding/release-manifest.json`：BookBinding 三个原始交付包的 SHA256、文件数量和验证状态。
@@ -107,3 +109,18 @@ powershell -ExecutionPolicy Bypass -File .\tools\install-common-skills.ps1
 ## 来源
 
 视频项目详见 `docs/UPSTREAM_SOURCES.md`；BookBinding 版本身份与包哈希详见 `skills/bookbinding/release-manifest.json`。
+
+
+## 施乐7855，7970维修手册
+
+GitHub 安装路径：
+
+`skills/xerox-7855-7970-service-manual/SKILL.md`
+
+可用于故障码、CE/诊断模式、dC131、dC301、定影器、转印带、稿台/DADF、纸张纸盒、Xerox Global Print Driver PS 调色、SMB 网络扫描和复机验收。
+
+直接调用示例：
+
+`调用施乐7855，7970维修手册，查 392-314，机器是 7855。`
+
+证据边界：官方技术骨架来自 `WorkCentre 7556 Family Service Documentation`；7855/7835 和四代/五代视频作为现场证据；现场 NVM 文档单独标为经验参数。当前资料没有明确的 WorkCentre 7970 官方维修手册，因此 7970 专属 NVM、线束和拆装差异不得把 7556 参数直接当官方值。
