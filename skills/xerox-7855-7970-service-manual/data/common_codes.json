@@ -1,0 +1,61 @@
+{
+  "392-314": {
+    "name": "ATC Fault [C]",
+    "source": "7556 official + field note",
+    "nvm_reset": [
+      "752-348",
+      "752-352"
+    ],
+    "note": "修复根因后清0；未修复会复发"
+  },
+  "342-319": {
+    "name": "Drum Y/M/C Motor Fail",
+    "source": "7556 official",
+    "dc330": [
+      "091-026 (7525/30/35)",
+      "091-027 (7545/56)"
+    ],
+    "note": "先空载驱动/查电源线束，再判断电机/PWB"
+  },
+  "342-323": {
+    "name": "Drum K Motor Fail",
+    "source": "7556 official",
+    "dc330": [
+      "091-033"
+    ],
+    "note": "查K鼓/显影机械负载、驱动、线束、PWB"
+  },
+  "310-375": {
+    "name": "Heat Belt STS Center Warm Up Time Fault",
+    "source": "7556 official",
+    "note": "检查310-361、定影连接器、线路、Fuser/MCU"
+  },
+  "374-101": {
+    "name": "Tray 4 Misfeed",
+    "source": "7556 official",
+    "note": "Feed Out Sensor未按时ON；查进纸/带出电机、传感器、辊轮、齿轮、纸张"
+  },
+  "740-062": {
+    "name": "现场芯片相关NVM",
+    "source": "field note only",
+    "values": {
+      "现场经验": "127",
+      "还原": "1"
+    },
+    "note": "7556官方手册未检索到，必须先Read记录原值"
+  },
+  "711-140": {
+    "name": "DADF Lead Reg Adjustment Side 1 (7556官方) / 现场文档另有命名",
+    "source": "official + field conflict",
+    "note": "跨代定义有冲突，不可直接套用"
+  },
+  "616-014": {
+    "name": "Install Wizard mode after SBC NVM replacement (7556 official)",
+    "source": "7556 official",
+    "values": {
+      "2": "运行安装向导",
+      "4": "跳过安装向导进入install complete"
+    },
+    "note": "不是普通故障通用清零码"
+  }
+}
