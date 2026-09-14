@@ -1,8 +1,8 @@
 {
   "bundle_name": "Henghua Codex Skill Library",
-  "bundle_version": "1.1.0",
-  "verified_date": "2026-08-30",
-  "purpose": "Codex / Agent Skills integration library containing six video skills plus Henghua BookBinding Expert.",
+  "bundle_version": "1.2.0",
+  "verified_date": "2026-09-14",
+  "purpose": "Codex / Agent Skills integration library containing six video skills, Henghua BookBinding Expert, and the Xerox 7855/7970 service manual Skill.",
   "skills": [
     {
       "id": "hyperframes",
@@ -10,14 +10,22 @@
       "upstream": "https://github.com/heygen-com/hyperframes",
       "branch": "main",
       "install_hint": "npx skills add heygen-com/hyperframes",
-      "requirements": ["Node.js 22+", "FFmpeg"]
+      "requirements": [
+        "Node.js 22+",
+        "FFmpeg"
+      ]
     },
     {
       "id": "video-use",
       "name": "video-use",
       "upstream": "https://github.com/browser-use/video-use",
       "branch": "main",
-      "requirements": ["Python", "ffmpeg/ffprobe", "ElevenLabs API key", "Node.js for some animation engines"]
+      "requirements": [
+        "Python",
+        "ffmpeg/ffprobe",
+        "ElevenLabs API key",
+        "Node.js for some animation engines"
+      ]
     },
     {
       "id": "remotion",
@@ -25,21 +33,32 @@
       "upstream": "https://github.com/remotion-dev/skills",
       "branch": "main",
       "install_hint": "npx skills add remotion-dev/skills",
-      "requirements": ["Node.js"]
+      "requirements": [
+        "Node.js"
+      ]
     },
     {
       "id": "generative-media",
       "name": "Generative Media Skills",
       "upstream": "https://github.com/SamurAIGPT/Generative-Media-Skills",
       "branch": "main",
-      "requirements": ["Node.js", "muapi-cli", "MUAPI_API_KEY for MuAPI-backed generation"]
+      "requirements": [
+        "Node.js",
+        "muapi-cli",
+        "MUAPI_API_KEY for MuAPI-backed generation"
+      ]
     },
     {
       "id": "chengfeng-videocut",
       "name": "chengfeng-videocut-skills",
       "upstream": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
       "branch": "main",
-      "requirements": ["Windows 10/11 or macOS", "Node.js 20+", "Chrome", "Runtime dependencies per upstream"]
+      "requirements": [
+        "Windows 10/11 or macOS",
+        "Node.js 20+",
+        "Chrome",
+        "Runtime dependencies per upstream"
+      ]
     },
     {
       "id": "seedance2",
@@ -47,7 +66,9 @@
       "upstream": "https://github.com/dexhunter/seedance2-skill",
       "branch": "main",
       "install_hint": "npx skills add dexhunter/seedance2-skill",
-      "requirements": ["Node.js for skills CLI"]
+      "requirements": [
+        "Node.js for skills CLI"
+      ]
     },
     {
       "id": "henghua-bookbinding",
@@ -56,8 +77,38 @@
       "factory_level": "L24",
       "path": "skills/bookbinding/SKILL.md",
       "validation_center": "1.15.0",
-      "capabilities": ["105 binding methods", "961 sourced technical parameters", "134 sources", "production gate", "numeric evidence closure"],
-      "requirements": ["Python 3", "Windows PowerShell for one-click local install/validation"]
+      "capabilities": [
+        "105 binding methods",
+        "961 sourced technical parameters",
+        "134 sources",
+        "production gate",
+        "numeric evidence closure"
+      ],
+      "requirements": [
+        "Python 3",
+        "Windows PowerShell for one-click local install/validation"
+      ]
+    },
+    {
+      "id": "xerox-7855-7970-service-manual",
+      "name": "施乐7855，7970维修手册",
+      "version": "1.0.0",
+      "path": "skills/xerox-7855-7970-service-manual/SKILL.md",
+      "capabilities": [
+        "故障码诊断",
+        "CE/诊断模式",
+        "dC131 NVM",
+        "dC301 恢复流程",
+        "定影系统",
+        "转印带",
+        "DADF/稿台",
+        "纸盒与驱动",
+        "颜色调整",
+        "SMB 网络扫描",
+        "复机验收"
+      ],
+      "evidence_policy": "A=7556 official manual; B=7835/7855 and 4th/5th generation field videos; C=field notes; exact WorkCentre 7970 parameters remain unverified",
+      "requirements": []
     }
   ]
 }
