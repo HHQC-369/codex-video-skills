@@ -1,0 +1,4 @@
+interface:
+  display_name: "施乐7855，7970维修手册"
+  short_description: "施乐7855/7970故障诊断、NVM、定影、扫描与维修流程"
+  default_prompt: "使用 $xerox-7855-7970-service-manual 按机型确认、诊断、维修、复位和验收顺序处理施乐7855/7970故障。"
