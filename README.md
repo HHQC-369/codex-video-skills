@@ -1,6 +1,6 @@
 # 恒华 Codex Skill Library
 
-版本：1.2.0  
+版本：1.2.1  
 核对日期：2026-09-14
 
 本仓库统一管理原有 6 个视频相关 Skill / Skill 项目、恒华书籍装订专家 Skill，并新增施乐 7855/7970 维修手册 Skill。
@@ -124,3 +124,10 @@ GitHub 安装路径：
 `调用施乐7855，7970维修手册，查 392-314，机器是 7855。`
 
 证据边界：官方技术骨架来自 `WorkCentre 7556 Family Service Documentation`；7855/7835 和四代/五代视频作为现场证据；现场 NVM 文档单独标为经验参数。当前资料没有明确的 WorkCentre 7970 官方维修手册，因此 7970 专属 NVM、线束和拆装差异不得把 7556 参数直接当官方值。
+
+
+### Xerox Skill 安装兼容性
+
+- 技术名必须使用 `xerox-7855-7970-service-manual`（小写字母、数字、连字符）。
+- UI 显示名仍为 **施乐7855，7970维修手册**，由 `agents/openai.yaml` 提供。
+- Skill 文件夹名与 `SKILL.md` 的 `name` 完全一致。
