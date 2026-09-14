@@ -1,6 +1,6 @@
 {
   "bundle_name": "Henghua Codex Skill Library",
-  "bundle_version": "1.2.0",
+  "bundle_version": "1.2.1",
   "verified_date": "2026-09-14",
   "purpose": "Codex / Agent Skills integration library containing six video skills, Henghua BookBinding Expert, and the Xerox 7855/7970 service manual Skill.",
   "skills": [
@@ -91,8 +91,8 @@
     },
     {
       "id": "xerox-7855-7970-service-manual",
-      "name": "施乐7855，7970维修手册",
-      "version": "1.0.0",
+      "name": "xerox-7855-7970-service-manual",
+      "version": "1.0.1",
       "path": "skills/xerox-7855-7970-service-manual/SKILL.md",
       "capabilities": [
         "故障码诊断",
@@ -108,7 +108,8 @@
         "复机验收"
       ],
       "evidence_policy": "A=7556 official manual; B=7835/7855 and 4th/5th generation field videos; C=field notes; exact WorkCentre 7970 parameters remain unverified",
-      "requirements": []
+      "requirements": [],
+      "display_name": "施乐7855，7970维修手册"
     }
   ]
 }
